@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# **Jayesh Shinde's Assignment Project: React + Tailwind CSS + API Integration**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my project! This assignment showcases my skills in React, API integration, and frontend development with Tailwind CSS. Below, you'll find a detailed walkthrough of the project features, setup instructions, and key highlights that demonstrate my ability to build scalable and functional web applications.
 
-## Available Scripts
+## **Table of Contents**
+1. [Project Overview](#project-overview)
+2. [Tech Stack](#tech-stack)
+3. [Features](#features)
+4. [Getting Started](#getting-started)
+5. [API Documentation](#api-documentation)
+6. [Validations](#validations)
+7. [Creative Challenges and Solutions](#creative-challenges-and-solutions)
+8. [Future Enhancements](#future-enhancements)
+9. [Conclusion](#conclusion)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## **Project Overview**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This React-based application is built with modern tools and best practices in mind. It handles user authentication, product listing, and search functionality using REST APIs. The design is responsive and styled with Tailwind CSS for a clean, modern UI.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I aimed to create a scalable, maintainable, and user-friendly application while also ensuring that my code reflects industry standards in API handling, state management, and promise handling.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Tech Stack**
 
-### `npm run build`
+- **Frontend**: React (with Vite)
+- **Styling**: Tailwind CSS
+- **API Integration**: Axios
+- **Routing**: React Router
+- **Validation**: JavaScript promises, `async`/`await`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **Features**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **User Authentication**: Registration, login, and current user details handled through APIs.
+- **Search and Pagination**: A seamless user experience for product listing with real-time search and pagination.
+- **Responsive Design**: Tailored for both desktop and mobile screens with Tailwind CSS.
+- **Error Handling**: Industry-standard validation and promise handling for error-free API interactions.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## **Getting Started**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run this project on your local machine:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **Prerequisites**
+- Node.js installed
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### **Installation**
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/username/project-name.git
+    cd project-name
+    ```
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
+3. Start the development server:
+    ```bash
+    npm run dev
+    ```
+4. Visit `http://localhost:3000` in your browser to see the app.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## **API Documentation**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project interacts with the following APIs:
 
-### Code Splitting
+1. **Login API**
+   - URL: [Login API](https://intern-task-api.bravo68web.workers.dev/auth/login)
+   - Method: `POST`
+   - Purpose: Handles user login.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Sign-up API**
+   - URL: [Signup API](https://intern-task-api.bravo68web.workers.dev/auth/signup)
+   - Method: `POST`
+   - Purpose: User registration.
 
-### Analyzing the Bundle Size
+3. **Current User API**
+   - URL: [Current-User API](https://intern-task-api.bravo68web.workers.dev/api/me)
+   - Method: `GET`
+   - Purpose: Fetch logged-in user details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## **Validations**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Form Validation**: Before submitting the form, basic checks ensure all fields are filled and valid.
+- **API Response Handling**: Error messages are shown for invalid logins or sign-ups, and users are redirected on successful authentication.
+- **Promise Handling**: APIs are handled using `async`/`await`, with appropriate loading states and error messages.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## **Creative Challenges and Solutions**
 
-### Deployment
+One of the most interesting challenges I faced during this project was ensuring smooth API integration while maintaining state across components without external libraries. I achieved this by leveraging React's `useState` and `useEffect` hooks, along with `async`/`await` for proper promise handling.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Here’s how I tackled some of the challenges:
+- **API Timeout and Loading States**: Implemented custom loaders and error screens to enhance user experience during slow responses.
+- **Clean Code and Scalability**: I adhered to modular coding practices, making the app scalable for future enhancements like user roles, filtering, and more.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## **Future Enhancements**
+
+While this project fulfills the assignment requirements, I envision several features that can make the app more robust:
+- **Dark Mode**: A toggle feature for dark and light themes.
+- **Profile Management**: Allow users to update their profiles.
+- **Improved Error Boundaries**: Enhanced error handling across all components.
+
+---
+
+## **Conclusion**
+
+This project reflects my dedication to writing clean, efficient code and my ability to learn and adapt new technologies quickly. I hope this gives you a good insight into my skills and thought process. Feel free to clone, explore, and connect with me if you have any feedback or opportunities!
