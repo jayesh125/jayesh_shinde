@@ -130,7 +130,7 @@ const Products = () => {
         >
           Previous
         </button>
-        <p className="text-white py-2 px-4 ml-2 rounded disabled:opacity-50">Page {currentPage} of {Math.ceil(filteredProducts.length / productsPerPage)}</p>
+        <p className="text-white py-2 px-4 ml-2 rounded disabled:opacity-50 min-[350px]:text-none truncate">Page {currentPage} of {Math.ceil(filteredProducts.length / productsPerPage)}</p>
         <button
           onClick={() => paginate(currentPage + 1)}
           disabled={indexOfLastProduct >= filteredProducts.length}
