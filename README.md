@@ -52,7 +52,7 @@ To run this project on your local machine:
 ### **Installation**
 1. Clone the repository:
     ```bash
-    git clone https://github.com/username/project-name.git
+    git clone https://github.com/jayesh125/jayesh_shinde.git
     cd project-name
     ```
 2. Install the dependencies:
