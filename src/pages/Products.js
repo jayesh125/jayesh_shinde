@@ -69,7 +69,7 @@ const Products = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="container mx-auto p-4 justify-center">
+    <div className="container m-5 p-4 h-screen ">
       
       <h2 className="text-2xl font-bold text-center text-white">Product Listing</h2>
 
@@ -121,7 +121,7 @@ const Products = () => {
           </div>
         ))}
       </div>
-      <div className="my-4 text-center flex justify-center">
+      <div className="m-4 text-center flex justify-center p-5">
 
         <button
           onClick={() => paginate(currentPage - 1)}
